@@ -2,19 +2,19 @@
 
 • **Go ECCnet Testing Environment:**
 
-![repo1](https://github.com/JongkukJayLee/AzureCICD/blob/master/images/image1.jpg)
+![repo1](https://github.com/JongkukJayLee/ProdCertTasks/blob/master/images/image1.jpg)
 
 • **Go ProSYNC BC:**
 
-![repo1](https://github.com/JongkukJayLee/AzureCICD/blob/master/images/image2.jpg)
+![repo1](https://github.com/JongkukJayLee/ProdCertTasks/blob/master/images/image2.jpg)
 
 • **Search GTIN:**
 
-![repo1](https://github.com/JongkukJayLee/AzureCICD/blob/master/images/image3.jpg)
+![repo1](https://github.com/JongkukJayLee/ProdCertTasks/blob/master/images/image3.jpg)
 
 • **Check Code List Value:**
 
-![repo1](https://github.com/JongkukJayLee/AzureCICD/blob/master/images/image4.jpg)
+![repo1](https://github.com/JongkukJayLee/ProdCertTasks/blob/master/images/image4.jpg)
 
 • **Run Service on QA server:**
 
