@@ -29,15 +29,31 @@
 
 • **Check Walkthrough:**
 
+Check 'Tracker' table
+
+![repo1](https://github.com/JongkukJayLee/ProdCertTasks/blob/master/images/image11.jpg)
+
+Check 'Business Process' table
+
+![repo1](https://github.com/JongkukJayLee/ProdCertTasks/blob/master/images/image9.jpg)
+
+Check 'Validation' table
+
+![repo1](https://github.com/JongkukJayLee/ProdCertTasks/blob/master/images/image12.jpg)
+
+
+• **Required SQL:**
+
+
 ```sql
+
 SELECT TOP (1000) [OutputProcess]
       ,[ItemID]
       ,[DateUpdated]
       ,[DateProcessed]
 FROM [EEV1_NextGen].[dbo].[Tracker] 
-where OutputProcess = 176
-  -- order by DateUpdated DESC 
-AND itemid = 26980 --gtin='10071524830067'
+WHERE OutputProcess = 176
+AND itemid = 247988
 
 ```
 
@@ -47,22 +63,23 @@ SELECT
 	s.DateUpdated, tk.gtin, tbp.BusinessProcessID, s.data, s.DateUpdated
 FROM eev1_nextgen.dbo.tradeitemkey tk 
 INNER join  eev1_nextgen.dbo.TradeItemInBusinessProcess tbp 
-ON tk.itemid = tbp.itemid   and tbp.BusinessProcessID in ( 146, 176)
+ON tk.itemid = tbp.itemid   and tbp.BusinessProcessID in ( 146, 176, 32)
 INNER join eev1_nextgen.dbo.TradeItemDataSnapshot s 
 ON tbp.id = s.id
-WHERE tk.gtin='00079118958619' --tk.itemid = 26980
+WHERE tk.gtin='00079118958619'--tk.itemid = 247988
 ORDER BY s.dateupdated DESC 
 
 ```
 
 ```sql
 
-SELECT TOP (1000) [ItemID]
+SELECT TOP (1000) 
+       [ItemID]
       ,[OutputProcess]
       ,[Message]
       ,[DateProcessed]
       ,[AdditionalId]
 FROM [EEV1_NextGen].[dbo].[ValidationMessages] 
-WHERE itemid = 26980  
+WHERE itemid = 247988  
 ORDER BY DateProcessed DESC 
 ```
